@@ -4,89 +4,146 @@ const questionBank = {
 // R093 – Creative iMedia in the Media Industry (Exam Unit)
 // ==============================
 
-"R093 – TA1 Media Industry Sectors & Products": {
-  quiz: [
-    {type:"mcq", q:"Which is a media sector?", options:["Retail","Gaming","Manufacturing","Agriculture"], answer:1},
-    {type:"mcq", q:"Which product belongs to the publishing sector?", options:["Podcast","Magazine","Video game","Streaming app"], answer:1},
-    {type:"written", command:"Describe", marks:3, q:"Describe one product created within the film sector."},
-    {type:"written", command:"Explain", marks:4, q:"Explain how convergence has impacted media products."},
-    {type:"extended", command:"Evaluate", marks:9, q:"Evaluate how different media sectors work together to create and distribute a successful media product."}
-  ],
-  flashcards: [
-    {front:"Media Sector", back:"An area of the media industry such as gaming, film, publishing or radio."},
-    {front:"Convergence", back:"When multiple technologies combine into one device."},
-    {front:"Cross-media ownership", back:"When one company owns multiple types of media outlets."}
-  ]
-},
+R093: {
+  "TA1 Media Industry": {
 
-"R093 – TA1 Job Roles & Working Practices": {
-  quiz:[
-    {type:"mcq", q:"Who creates visual assets for a media product?", options:["Editor","Graphic Designer","Camera Operator","Sound Engineer"], answer:1},
-    {type:"written", command:"Describe", marks:3, q:"Describe the role of a content creator."},
-    {type:"written", command:"Explain", marks:4, q:"Explain why teamwork is important in media production."},
-    {type:"extended", command:"Discuss", marks:6, q:"Discuss how job roles differ between small and large media organisations."}
-  ],
-  flashcards:[
-    {front:"Freelancer", back:"A self-employed person hired for specific projects."},
-    {front:"Full-time employment", back:"Permanent employment within a company."}
-  ]
-},
+    "Sectors & Products": {
+      quiz: [
+        {type:"mcq", q:"Which sector produces console games?", options:["Publishing","Gaming","Radio","Print"], answer:1},
+        {type:"mcq", q:"Which product belongs to the publishing sector?", options:["Magazine","Feature film","Podcast","Video game"], answer:0},
+        {type:"mcq", q:"Which sector creates radio broadcasts?", options:["Film","Radio","Gaming","Advertising"], answer:1},
+        {type:"mcq", q:"What is convergence?", options:["Owning multiple companies","Combining technologies","Marketing strategy","Editing process"], answer:1},
 
-"R093 – TA2 Factors Influencing Product Design": {
-  quiz:[
-    {type:"mcq", q:"Which is a demographic category?", options:["Age","Colour scheme","Layout","Font"], answer:0},
-    {type:"mcq", q:"What does psychographics refer to?", options:["Income","Lifestyle","Gender","Location"], answer:1},
-    {type:"written", command:"Explain", marks:4, q:"Explain how target audience influences design decisions."},
-    {type:"written", command:"Describe", marks:3, q:"Describe one client requirement that could influence a media product."},
-    {type:"extended", command:"Evaluate", marks:9, q:"Evaluate how audience research can improve the success of a media product."}
-  ],
-  flashcards:[
-    {front:"Demographics", back:"Statistical data relating to population groups such as age, gender and income."},
-    {front:"Psychographics", back:"Audience characteristics relating to lifestyle and interests."},
-    {front:"Primary Research", back:"Research collected directly from original sources."}
-  ]
-},
+        {
+          type:"written",
+          command:"Describe",
+          marks:3,
+          q:"Describe one product created in the film sector.",
+          markScheme:[
+            "1 mark – identifies film product",
+            "1 mark – basic description",
+            "1 mark – linked to film sector"
+          ],
+          modelAnswer:"One product created in the film sector is a feature film. This is a long-form video production created for cinema or streaming platforms. It involves actors, scripts and post-production editing."
+        },
 
-"R093 – TA3 Pre-Production Documents": {
-  quiz:[
-    {type:"mcq", q:"Which document outlines visual scenes?", options:["Script","Storyboard","Asset Log","Mood Board"], answer:1},
-    {type:"mcq", q:"Which document tracks media assets?", options:["Asset Log","Script","Flat Plan","Call Sheet"], answer:0},
-    {type:"written", command:"Describe", marks:3, q:"Describe the purpose of a mood board."},
-    {type:"written", command:"Explain", marks:4, q:"Explain how a production schedule supports time management."},
-    {type:"extended", command:"Explain", marks:6, q:"Explain how pre-production documents help ensure client requirements are met."}
-  ],
-  flashcards:[
-    {front:"Storyboard", back:"A visual sequence plan showing how scenes will appear."},
-    {front:"Asset Log", back:"A document used to record media assets and sources."},
-    {front:"Call Sheet", back:"Document containing details about filming schedules and locations."}
-  ]
-},
+        {
+          type:"written",
+          command:"Explain",
+          marks:4,
+          q:"Explain how convergence has changed media consumption.",
+          markScheme:[
+            "1 mark – defines convergence",
+            "1 mark – example device",
+            "1–2 marks – developed explanation of change"
+          ],
+          modelAnswer:"Convergence is when multiple technologies combine into one device, such as a smartphone. This allows audiences to watch films, stream music and access social media on a single device. It makes media more portable and accessible."
+        },
 
-"R093 – TA3 Legal & Ethical Issues": {
-  quiz:[
-    {type:"mcq", q:"Which law protects original creative work?", options:["Copyright","Libel","Equality Act","Trademark"], answer:0},
-    {type:"mcq", q:"What is libel?", options:["Written defamation","Audio compression","Brand logo","File format"], answer:0},
-    {type:"written", command:"Explain", marks:4, q:"Explain why media producers must consider copyright law."},
-    {type:"extended", command:"Evaluate", marks:9, q:"Evaluate the consequences of not following legal and ethical guidelines when creating a media product."}
-  ],
-  flashcards:[
-    {front:"Copyright", back:"Legal protection for original creative work."},
-    {front:"Libel", back:"Written false statement that damages reputation."},
-    {front:"Watershed", back:"Time after which adult content may be broadcast."}
-  ]
-},
+        {
+          type:"extended",
+          command:"Evaluate",
+          marks:9,
+          q:"Evaluate how synergy and cross-media ownership increase the success of a media product.",
+          markScheme:[
+            "Level 1 – basic description",
+            "Level 2 – clear explanation of synergy/ownership",
+            "Level 3 – developed evaluation with justified judgement"
+          ],
+          modelAnswer:"Synergy allows different departments within a company to promote the same product across multiple platforms, increasing audience reach. Cross-media ownership enables a company to control production and distribution channels. This increases marketing power and profit. However, it may reduce diversity in the industry. Overall, these strategies significantly increase success when used effectively."
+        }
+      ],
 
-"R093 – TA4 Distribution & File Properties": {
-  quiz:[
-    {type:"mcq", q:"Which file format is commonly used for images online?", options:["JPEG","PSD","WAV","AVI"], answer:0},
-    {type:"mcq", q:"Which audio format is uncompressed?", options:["MP3","WAV","JPEG","PNG"], answer:1},
-    {type:"written", command:"Describe", marks:3, q:"Describe how file size affects distribution."},
-    {type:"extended", command:"Explain", marks:6, q:"Explain how file formats impact quality and accessibility across different platforms."}
-  ],
-  flashcards:[
-    {front:"Resolution", back:"The number of pixels in an image."},
-    {front:"Compression", back:"Reducing file size by removing data."}
-  ]
+      flashcards:[
+        {front:"Convergence", back:"When multiple technologies combine into one device."},
+        {front:"Synergy", back:"When different parts of a company promote the same product."},
+        {front:"Cross-media ownership", back:"When one company owns multiple media platforms."}
+      ]
+    },
+
+    "Job Roles (Creative / Technical / Managerial / Administrative)": {
+      quiz:[
+        {type:"mcq", q:"Which is a creative role?", options:["Graphic designer","HR manager","Finance officer","Technician"], answer:0},
+        {type:"mcq", q:"Which is a technical role?", options:["Scriptwriter","Camera operator","Producer","Marketing manager"], answer:1},
+        {type:"mcq", q:"Which role manages the overall production?", options:["Director","Animator","Editor","Sound engineer"], answer:0},
+
+        {
+          type:"written",
+          command:"Describe",
+          marks:4,
+          q:"Describe the difference between creative and technical roles.",
+          markScheme:[
+            "1 mark – defines creative role",
+            "1 mark – example",
+            "1 mark – defines technical role",
+            "1 mark – example"
+          ],
+          modelAnswer:"Creative roles focus on generating ideas and designing content, such as graphic designers and scriptwriters. Technical roles focus on operating equipment and software, such as camera operators or sound engineers. Creative roles develop concepts, while technical roles bring them to life."
+        },
+
+        {
+          type:"extended",
+          command:"Explain",
+          marks:6,
+          q:"Explain why different job roles are needed in media production.",
+          markScheme:[
+            "1–2 marks – identifies different roles",
+            "1–2 marks – explains responsibilities",
+            "Up to 2 marks – developed explanation of collaboration"
+          ],
+          modelAnswer:"Media production requires different skills. Creative roles generate ideas and design content. Technical roles use equipment and software to produce the product. Managerial roles coordinate teams and ensure deadlines are met. Administrative roles manage finance and legal requirements. All roles must work together to complete a successful product."
+        }
+      ],
+
+      flashcards:[
+        {front:"Creative Roles", back:"Generate ideas and design content."},
+        {front:"Technical Roles", back:"Operate equipment and software."},
+        {front:"Managerial Roles", back:"Oversee production and decision-making."},
+        {front:"Administrative Roles", back:"Support finance, HR and legal tasks."}
+      ]
+    },
+
+    "Working Practices": {
+      quiz:[
+        {type:"mcq", q:"What is a freelancer?", options:["Permanent employee","Self-employed worker","Intern","Volunteer"], answer:1},
+        {type:"mcq", q:"Which provides most job security?", options:["Freelance","Full-time employment","Short-term contract","Temporary"], answer:1},
+
+        {
+          type:"written",
+          command:"Explain",
+          marks:4,
+          q:"Explain one advantage and one disadvantage of freelance work.",
+          markScheme:[
+            "1 mark – advantage identified",
+            "1 mark – explanation",
+            "1 mark – disadvantage identified",
+            "1 mark – explanation"
+          ],
+          modelAnswer:"An advantage of freelance work is flexibility, as workers can choose projects and working hours. A disadvantage is reduced job security because income depends on securing contracts."
+        },
+
+        {
+          type:"extended",
+          command:"Discuss",
+          marks:6,
+          q:"Discuss how working practices affect job security in the media industry.",
+          markScheme:[
+            "1–2 marks – identifies working patterns",
+            "1–2 marks – explains impact",
+            "Up to 2 marks – developed discussion"
+          ],
+          modelAnswer:"Freelance and contract work can reduce job security because employment depends on project availability. However, full-time employment provides stable income and benefits. The media industry often relies on freelance work, making job security less predictable."
+        }
+      ],
+
+      flashcards:[
+        {front:"Freelance", back:"Self-employed worker hired per project."},
+        {front:"Full-time", back:"Permanent employment with regular salary."},
+        {front:"Contract Work", back:"Employment for a fixed period."}
+      ]
+    }
+
+  }
 },
 
 // ==============================
