@@ -5,145 +5,124 @@ const questionBank = {
 // ==============================
 
 R093: {
+
   "TA1 Media Industry": {
 
-    "Sectors & Products": {
+    "Media Sectors": {
       quiz: [
-        {type:"mcq", q:"Which sector produces console games?", options:["Publishing","Gaming","Radio","Print"], answer:1},
-        {type:"mcq", q:"Which product belongs to the publishing sector?", options:["Magazine","Feature film","Podcast","Video game"], answer:0},
-        {type:"mcq", q:"Which sector creates radio broadcasts?", options:["Film","Radio","Gaming","Advertising"], answer:1},
-        {type:"mcq", q:"What is convergence?", options:["Owning multiple companies","Combining technologies","Marketing strategy","Editing process"], answer:1},
-
-        {
-          type:"written",
-          command:"Describe",
-          marks:3,
-          q:"Describe one product created in the film sector.",
-          markScheme:[
-            "1 mark – identifies film product",
-            "1 mark – basic description",
-            "1 mark – linked to film sector"
-          ],
-          modelAnswer:"One product created in the film sector is a feature film. This is a long-form video production created for cinema or streaming platforms. It involves actors, scripts and post-production editing."
-        },
-
+        {type:"mcq", q:"Which sector produces feature films?", options:["Publishing","Film","Radio","Gaming"], answer:1},
+        {type:"mcq", q:"Which sector creates magazines?", options:["Television","Publishing","Film","Advertising"], answer:1},
         {
           type:"written",
           command:"Explain",
           marks:4,
-          q:"Explain how convergence has changed media consumption.",
+          q:"Explain one difference between the film and television sectors.",
           markScheme:[
-            "1 mark – defines convergence",
-            "1 mark – example device",
-            "1–2 marks – developed explanation of change"
+            "1 mark – identifies difference",
+            "1 mark – explains film",
+            "1 mark – explains television",
+            "1 mark – developed comparison"
           ],
-          modelAnswer:"Convergence is when multiple technologies combine into one device, such as a smartphone. This allows audiences to watch films, stream music and access social media on a single device. It makes media more portable and accessible."
-        },
-
-        {
-          type:"extended",
-          command:"Evaluate",
-          marks:9,
-          q:"Evaluate how synergy and cross-media ownership increase the success of a media product.",
-          markScheme:[
-            "Level 1 – basic description",
-            "Level 2 – clear explanation of synergy/ownership",
-            "Level 3 – developed evaluation with justified judgement"
-          ],
-          modelAnswer:"Synergy allows different departments within a company to promote the same product across multiple platforms, increasing audience reach. Cross-media ownership enables a company to control production and distribution channels. This increases marketing power and profit. However, it may reduce diversity in the industry. Overall, these strategies significantly increase success when used effectively."
+          modelAnswer:"The film sector produces content primarily for cinema or streaming release, often with larger budgets. The television sector produces episodic content for broadcast schedules. Films are usually one-off productions whereas television programmes are serialised."
         }
       ],
-
       flashcards:[
-        {front:"Convergence", back:"When multiple technologies combine into one device."},
-        {front:"Synergy", back:"When different parts of a company promote the same product."},
-        {front:"Cross-media ownership", back:"When one company owns multiple media platforms."}
+        {front:"Film Sector", back:"Produces movies for cinema or streaming."},
+        {front:"Publishing Sector", back:"Produces books, newspapers and magazines."},
+        {front:"Gaming Sector", back:"Produces console, PC and mobile games."}
       ]
     },
 
-    "Job Roles (Creative / Technical / Managerial / Administrative)": {
+    "Ownership & Funding": {
       quiz:[
-        {type:"mcq", q:"Which is a creative role?", options:["Graphic designer","HR manager","Finance officer","Technician"], answer:0},
-        {type:"mcq", q:"Which is a technical role?", options:["Scriptwriter","Camera operator","Producer","Marketing manager"], answer:1},
-        {type:"mcq", q:"Which role manages the overall production?", options:["Director","Animator","Editor","Sound engineer"], answer:0},
+        {type:"mcq", q:"What is conglomerate ownership?", options:["One owner","Multiple small companies","Large corporation owning multiple companies","Public ownership"], answer:2},
+        {
+          type:"written",
+          command:"Evaluate",
+          marks:9,
+          q:"Evaluate the impact of conglomerate ownership on the media industry.",
+          markScheme:[
+            "Level 1 – basic understanding",
+            "Level 2 – clear explanation of advantages/disadvantages",
+            "Level 3 – developed evaluation with judgement"
+          ],
+          modelAnswer:"Conglomerate ownership allows large companies to control multiple sectors, increasing efficiency and synergy. It allows cross-promotion and financial stability. However, it may reduce competition and limit diversity of viewpoints. Overall, it strengthens business power but can reduce media plurality."
+        }
+      ],
+      flashcards:[
+        {front:"Conglomerate", back:"Large company owning multiple media businesses."},
+        {front:"Independent Company", back:"A company not owned by a larger organisation."}
+      ]
+    },
+
+    "Job Roles": {
+      quiz:[
+
+        {type:"mcq", q:"Which is a creative job role?", options:["Graphic designer","HR manager","Accountant","IT technician"], answer:0},
+        {type:"mcq", q:"Which is a technical job role?", options:["Animator","Camera operator","Producer","Marketing manager"], answer:1},
+        {type:"mcq", q:"Which role oversees the entire production?", options:["Director","Editor","Sound engineer","Designer"], answer:0},
 
         {
           type:"written",
           command:"Describe",
           marks:4,
-          q:"Describe the difference between creative and technical roles.",
+          q:"Describe the responsibilities of a producer.",
           markScheme:[
-            "1 mark – defines creative role",
-            "1 mark – example",
-            "1 mark – defines technical role",
-            "1 mark – example"
+            "1 mark – planning",
+            "1 mark – budget management",
+            "1 mark – coordinating staff",
+            "1 mark – overseeing production"
           ],
-          modelAnswer:"Creative roles focus on generating ideas and designing content, such as graphic designers and scriptwriters. Technical roles focus on operating equipment and software, such as camera operators or sound engineers. Creative roles develop concepts, while technical roles bring them to life."
+          modelAnswer:"A producer oversees the entire production. They manage the budget, hire staff, coordinate schedules and ensure the project meets deadlines. They are responsible for the overall success of the production."
         },
 
         {
-          type:"extended",
+          type:"written",
           command:"Explain",
           marks:6,
-          q:"Explain why different job roles are needed in media production.",
+          q:"Explain why different job roles are required in a media production.",
           markScheme:[
-            "1–2 marks – identifies different roles",
+            "1–2 marks – identifies roles",
             "1–2 marks – explains responsibilities",
-            "Up to 2 marks – developed explanation of collaboration"
+            "1–2 marks – explains collaboration"
           ],
-          modelAnswer:"Media production requires different skills. Creative roles generate ideas and design content. Technical roles use equipment and software to produce the product. Managerial roles coordinate teams and ensure deadlines are met. Administrative roles manage finance and legal requirements. All roles must work together to complete a successful product."
+          modelAnswer:"Different job roles are required because media production involves multiple specialised skills. Creative roles generate ideas and design content. Technical roles operate equipment and software. Managerial roles coordinate the project. Administrative roles handle finance and legal issues. Collaboration ensures the product is completed successfully."
         }
-      ],
 
+      ],
       flashcards:[
-        {front:"Creative Roles", back:"Generate ideas and design content."},
-        {front:"Technical Roles", back:"Operate equipment and software."},
-        {front:"Managerial Roles", back:"Oversee production and decision-making."},
-        {front:"Administrative Roles", back:"Support finance, HR and legal tasks."}
+        {front:"Creative Roles", back:"Generate ideas and design content (e.g. graphic designer, scriptwriter)."},
+        {front:"Technical Roles", back:"Operate equipment and software (e.g. camera operator, sound engineer)."},
+        {front:"Managerial Roles", back:"Oversee production and decision making (e.g. producer, director)."},
+        {front:"Administrative Roles", back:"Handle finance, HR and legal tasks."}
       ]
     },
 
     "Working Practices": {
       quiz:[
-        {type:"mcq", q:"What is a freelancer?", options:["Permanent employee","Self-employed worker","Intern","Volunteer"], answer:1},
-        {type:"mcq", q:"Which provides most job security?", options:["Freelance","Full-time employment","Short-term contract","Temporary"], answer:1},
-
+        {type:"mcq", q:"What is freelance work?", options:["Permanent employment","Self-employed project work","Volunteer work","Internship"], answer:1},
         {
           type:"written",
           command:"Explain",
           marks:4,
-          q:"Explain one advantage and one disadvantage of freelance work.",
+          q:"Explain one advantage and one disadvantage of freelance employment.",
           markScheme:[
             "1 mark – advantage identified",
-            "1 mark – explanation",
+            "1 mark – explained",
             "1 mark – disadvantage identified",
-            "1 mark – explanation"
+            "1 mark – explained"
           ],
-          modelAnswer:"An advantage of freelance work is flexibility, as workers can choose projects and working hours. A disadvantage is reduced job security because income depends on securing contracts."
-        },
-
-        {
-          type:"extended",
-          command:"Discuss",
-          marks:6,
-          q:"Discuss how working practices affect job security in the media industry.",
-          markScheme:[
-            "1–2 marks – identifies working patterns",
-            "1–2 marks – explains impact",
-            "Up to 2 marks – developed discussion"
-          ],
-          modelAnswer:"Freelance and contract work can reduce job security because employment depends on project availability. However, full-time employment provides stable income and benefits. The media industry often relies on freelance work, making job security less predictable."
+          modelAnswer:"An advantage of freelance work is flexibility, as workers can choose projects. A disadvantage is lack of job security because income depends on finding contracts."
         }
       ],
-
       flashcards:[
-        {front:"Freelance", back:"Self-employed worker hired per project."},
-        {front:"Full-time", back:"Permanent employment with regular salary."},
-        {front:"Contract Work", back:"Employment for a fixed period."}
+        {front:"Freelancer", back:"Self-employed worker hired per project."},
+        {front:"Full-time Employment", back:"Permanent role with stable income and benefits."}
       ]
     }
 
   }
+
 },
 
 // ==============================
