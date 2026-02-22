@@ -2,69 +2,126 @@ let currentMode = 'quiz';
 
 function showMode(mode){
   currentMode = mode;
-  renderTopics();
+  renderAll();
 }
 
-function renderTopics(){
-  const topicsDiv = document.getElementById('topics');
-  topicsDiv.innerHTML='';
+function toggleSection(element){
+  const content = element.nextElementSibling;
+  content.style.display = content.style.display === 'none' ? 'block' : 'none';
+}
 
-  for(let topic in questionBank){
-    const wrapper=document.createElement('div');
-    wrapper.className='topic-card';
+function renderAll(){
+  const container = document.getElementById('topics');
+  container.innerHTML = '';
 
-    const title=document.createElement('h2');
-    title.innerText=topic;
-    title.style.cursor='pointer';
+  for(const unit in questionBank){
+    const unitWrapper = document.createElement('div');
+    unitWrapper.className = 'topic-card';
 
-    const content=document.createElement('div');
-    content.className='hidden';
+    const unitHeader = document.createElement('h1');
+    unitHeader.innerText = unit;
+    unitHeader.style.cursor = 'pointer';
 
-    title.onclick=()=>{
-      content.classList.toggle('hidden');
-    };
+    const unitContent = document.createElement('div');
+    unitContent.style.display = 'none';
 
-    if(currentMode==='quiz'){
-      questionBank[topic].quiz.forEach(q=>{
-        const box=document.createElement('div');
-        box.className='question-box';
-        box.innerHTML=`<h3>${q.q}</h3>`;
+    unitHeader.onclick = () => toggleSection(unitHeader);
 
-        if(q.type==='mcq'){
-          const answers=document.createElement('div');
-          answers.className='answers';
-          q.options.forEach((opt,idx)=>{
-            const btn=document.createElement('button');
-            btn.innerText=opt;
-            btn.onclick=()=>{
-              if(idx===q.answer) btn.classList.add('correct');
-              else btn.classList.add('wrong');
-            };
-            answers.appendChild(btn);
+    for(const ta in questionBank[unit]){
+      const taHeader = document.createElement('h2');
+      taHeader.innerText = ta;
+      taHeader.style.cursor = 'pointer';
+
+      const taContent = document.createElement('div');
+      taContent.style.display = 'none';
+
+      taHeader.onclick = () => toggleSection(taHeader);
+
+      for(const sub in questionBank[unit][ta]){
+        const subHeader = document.createElement('h3');
+        subHeader.innerText = sub;
+        subHeader.style.cursor = 'pointer';
+
+        const subContent = document.createElement('div');
+        subContent.style.display = 'none';
+        subContent.className = 'question-box';
+
+        subHeader.onclick = () => toggleSection(subHeader);
+
+        if(currentMode === 'quiz'){
+          questionBank[unit][ta][sub].quiz.forEach(q=>{
+            const qDiv = document.createElement('div');
+            qDiv.innerHTML = `<p><strong>${q.q}</strong></p>`;
+            if(q.command){
+              qDiv.innerHTML += `<p>${q.command} (${q.marks} marks)</p>`;
+            }
+
+            if(q.type === 'mcq'){
+              q.options.forEach((opt,i)=>{
+                const btn = document.createElement('button');
+                btn.innerText = opt;
+                btn.onclick = ()=>{
+                  if(i===q.answer){ btn.classList.add('correct'); }
+                  else{ btn.classList.add('wrong'); }
+                };
+                qDiv.appendChild(btn);
+              });
+            } else {
+              qDiv.innerHTML += `<textarea placeholder='Write your answer...'></textarea>`;
+
+              if(q.markScheme){
+                const msBtn = document.createElement('button');
+                msBtn.innerText = 'Show Mark Scheme';
+                const msDiv = document.createElement('div');
+                msDiv.style.display='none';
+                msDiv.innerHTML = q.markScheme.join('<br>');
+                msBtn.onclick = ()=>{
+                  msDiv.style.display = msDiv.style.display==='none'?'block':'none';
+                };
+                qDiv.appendChild(msBtn);
+                qDiv.appendChild(msDiv);
+              }
+
+              if(q.modelAnswer){
+                const maBtn = document.createElement('button');
+                maBtn.innerText = 'Show Model Answer';
+                const maDiv = document.createElement('div');
+                maDiv.style.display='none';
+                maDiv.innerText = q.modelAnswer;
+                maBtn.onclick = ()=>{
+                  maDiv.style.display = maDiv.style.display==='none'?'block':'none';
+                };
+                qDiv.appendChild(maBtn);
+                qDiv.appendChild(maDiv);
+              }
+            }
+
+            subContent.appendChild(qDiv);
           });
-          box.appendChild(answers);
         } else {
-          box.innerHTML+=`<p><strong>${q.command||''} (${q.marks||''} marks)</strong></p>`;
-          box.innerHTML+=`<textarea placeholder='Write your answer here...'></textarea>`;
+          questionBank[unit][ta][sub].flashcards.forEach(card=>{
+            const cardDiv = document.createElement('div');
+            cardDiv.className='flashcard';
+            cardDiv.innerText = card.front;
+            cardDiv.onclick = ()=>{
+              cardDiv.innerText = cardDiv.innerText===card.front ? card.back : card.front;
+            };
+            subContent.appendChild(cardDiv);
+          });
         }
-        content.appendChild(box);
-      });
-    } else {
-      questionBank[topic].flashcards.forEach(card=>{
-        const div=document.createElement('div');
-        div.className='flashcard';
-        div.innerText=card.front;
-        div.onclick=()=>{
-          div.innerText = div.innerText===card.front ? card.back : card.front;
-        };
-        content.appendChild(div);
-      });
+
+        taContent.appendChild(subHeader);
+        taContent.appendChild(subContent);
+      }
+
+      unitContent.appendChild(taHeader);
+      unitContent.appendChild(taContent);
     }
 
-    wrapper.appendChild(title);
-    wrapper.appendChild(content);
-    topicsDiv.appendChild(wrapper);
+    unitWrapper.appendChild(unitHeader);
+    unitWrapper.appendChild(unitContent);
+    container.appendChild(unitWrapper);
   }
 }
 
-renderTopics();
+renderAll();
