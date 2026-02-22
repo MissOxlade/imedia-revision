@@ -1,3 +1,5 @@
+const questionBank = {
+
 /* =========================
    R093 – Creative iMedia in the Media Industry
    ========================= */
