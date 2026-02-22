@@ -407,76 +407,285 @@ R093: {
 
   "TA3 Pre-Production Planning": {
 
-    "Pre-Production Documents": {
-      quiz:[
-        {type:"mcq", q:"Which document visually plans scenes?", options:["Storyboard","Asset log","Flat plan","Brief"], answer:0},
-        {type:"mcq", q:"What does an asset log record?", options:["Budget","Media sources","Audience","Deadline"], answer:1}
-      ],
-      flashcards:[
-        {front:"Storyboard", back:"Visual sequence plan."},
-        {front:"Asset Log", back:"Records assets and sources."}
-      ]
-    },
+  /* ================= PRE-PRODUCTION DOCUMENTS ================= */
 
-    "Legal & Ethical Issues": {
-      quiz:[
-        {type:"mcq", q:"What does copyright protect?", options:["Ideas","Original work","Budget","Audience"], answer:1},
-        {type:"mcq", q:"What is libel?", options:["Audio format","Written defamation","Logo","File compression"], answer:1}
-      ],
-      flashcards:[
-        {front:"Copyright", back:"Protects original creative work."},
-        {front:"Libel", back:"Written false statement damaging reputation."}
-      ]
-    }
+  "Pre-Production Documents": {
 
+    quiz:[
+
+      {type:"mcq", q:"Which document visually plans camera shots?", options:["Storyboard","Asset log","Flat plan","Client brief"], answer:0},
+      {type:"mcq", q:"Which document outlines content layout for print?", options:["Flat plan","Script","Risk assessment","Mood board"], answer:0},
+      {type:"mcq", q:"What does an asset log record?", options:["Budget","Media sources","Audience data","Deadlines"], answer:1},
+      {type:"mcq", q:"Which document identifies potential hazards?", options:["Risk assessment","Storyboard","Script","Brief"], answer:0},
+
+      {
+        type:"written",
+        command:"Describe",
+        marks:4,
+        q:"Describe two purposes of a storyboard.",
+        markScheme:[
+          "1 mark – identifies purpose 1",
+          "1 mark – explains purpose 1",
+          "1 mark – identifies purpose 2",
+          "1 mark – explains purpose 2"
+        ],
+        modelAnswer:"A storyboard visually plans the sequence of shots. It helps organise filming and ensures the narrative flows correctly."
+      },
+
+      {
+        type:"extended",
+        command:"Explain",
+        marks:6,
+        q:"Explain why pre-production documentation is essential before production begins.",
+        markScheme:[
+          "1–2 marks – identifies documents",
+          "1–2 marks – explains organisation",
+          "1–2 marks – developed reasoning"
+        ],
+        modelAnswer:"Pre-production documents help plan structure, identify risks and organise assets. This reduces mistakes and ensures efficient production."
+      }
+
+    ],
+
+    flashcards:[
+      {front:"Storyboard", back:"Visual plan of shots or scenes."},
+      {front:"Flat Plan", back:"Layout plan for printed media."},
+      {front:"Asset Log", back:"Record of assets and their sources."},
+      {front:"Risk Assessment", back:"Document identifying hazards and control measures."}
+    ]
   },
 
-  /* ================= TA4 ================= */
+  /* ================= LEGAL ISSUES ================= */
 
-  "TA4 Distribution & File Properties": {
+  "Legal Issues": {
 
-    "Image, Audio & Video Properties": {
-      quiz:[
-        {type:"mcq", q:"Which image format uses lossy compression?", options:["PNG","JPEG","PSD","TIFF"], answer:1},
-        {type:"mcq", q:"Which audio format is uncompressed?", options:["MP3","WAV","AAC","JPEG"], answer:1},
-        {type:"mcq", q:"What does resolution refer to?", options:["Colour scheme","Number of pixels","Budget","Bitrate"], answer:1}
-      ],
-      flashcards:[
-        {front:"Resolution", back:"Number of pixels in an image."},
-        {front:"Bitrate", back:"Amount of data processed per second."},
-        {front:"Compression", back:"Reducing file size by removing data."}
-      ]
-    }
-
-  }
-
-},
-
-/* =========================
-   R094 – Visual Identity & Digital Graphics
-   ========================= */
-
-R094: {
-
-  "Visual Identity & Branding": {
     quiz:[
-      {type:"mcq", q:"What is the purpose of a logo?", options:["Decoration","Brand recognition","Compression","Navigation"], answer:1},
+
+      {type:"mcq", q:"What does copyright protect?", options:["Ideas","Original work","Deadlines","Audience"], answer:1},
+      {type:"mcq", q:"What is libel?", options:["Audio format","Written defamation","Budget plan","Video format"], answer:1},
+      {type:"mcq", q:"Which law protects personal data?", options:["Copyright","Data Protection","Libel","Trademark"], answer:1},
+      {type:"mcq", q:"What is a trademark?", options:["Logo protection","File format","Budget type","Research method"], answer:0},
+
+      {
+        type:"written",
+        command:"Explain",
+        marks:4,
+        q:"Explain why copyright permission is required when using external assets.",
+        markScheme:[
+          "1 mark – identifies copyright",
+          "1 mark – explains legal protection",
+          "1–2 marks – developed consequence"
+        ],
+        modelAnswer:"Copyright protects original work. Using assets without permission may result in legal action and financial penalties."
+      },
+
       {
         type:"extended",
         command:"Evaluate",
         marks:9,
-        q:"Evaluate how effectively a logo meets target audience needs.",
+        q:"Evaluate the consequences of ignoring legal issues in media production.",
         markScheme:[
-          "Level 1 – basic description",
+          "Level 1 – basic statements",
           "Level 2 – clear explanation",
-          "Level 3 – developed judgement"
+          "Level 3 – developed evaluation with judgement"
         ],
-        modelAnswer:"An effective logo uses colour, typography and symbolism appropriate for the audience. If aligned well, it strengthens brand identity."
+        modelAnswer:"Ignoring legal issues may result in fines, lawsuits and reputational damage. It can delay production and damage credibility. Legal compliance is essential for professional media production."
       }
+
     ],
+
     flashcards:[
-      {front:"Typography", back:"Style and arrangement of text."},
-      {front:"Colour Theory", back:"Principles of colour combinations."}
+      {front:"Copyright", back:"Legal protection for original work."},
+      {front:"Libel", back:"Written false statement damaging reputation."},
+      {front:"Data Protection", back:"Law protecting personal information."},
+      {front:"Trademark", back:"Protection for brand names and logos."}
+    ]
+  },
+
+  /* ================= ETHICAL & HEALTH & SAFETY ================= */
+
+  "Ethical & Health and Safety Considerations": {
+
+    quiz:[
+
+      {type:"mcq", q:"Which is an ethical consideration?", options:["Avoiding stereotypes","Resolution","Bitrate","Compression"], answer:0},
+      {type:"mcq", q:"Which document addresses on-set hazards?", options:["Risk assessment","Flat plan","Script","Brief"], answer:0},
+
+      {
+        type:"written",
+        command:"Explain",
+        marks:4,
+        q:"Explain why health and safety procedures are important during production.",
+        markScheme:[
+          "1 mark – identifies H&S",
+          "1 mark – explains safety",
+          "1–2 marks – developed explanation"
+        ],
+        modelAnswer:"Health and safety procedures prevent accidents and injuries. They ensure safe use of equipment and safe working environments."
+      },
+
+      {
+        type:"extended",
+        command:"Discuss",
+        marks:6,
+        q:"Discuss the importance of ethical considerations in media production.",
+        markScheme:[
+          "1–2 marks – identifies ethics",
+          "1–2 marks – explains impact",
+          "1–2 marks – developed discussion"
+        ],
+        modelAnswer:"Ethical considerations ensure content does not harm or offend audiences. Avoiding stereotypes and respecting privacy maintains audience trust."
+      }
+
+    ],
+
+    flashcards:[
+      {front:"Ethical Issue", back:"A moral concern such as avoiding stereotypes."},
+      {front:"Health & Safety", back:"Procedures ensuring safe working practices."}
+    ]
+  }
+
+},
+
+  /* ================= TA4 ================= */
+
+ "TA4 Distribution & File Properties": {
+
+  /* ================= DISTRIBUTION ================= */
+
+  "Distribution Platforms": {
+
+    quiz:[
+
+      {type:"mcq", q:"Which is a digital distribution platform?", options:["Streaming service","Printed magazine","DVD rental","Cinema projector"], answer:0},
+      {type:"mcq", q:"Which platform is most suitable for mobile audiences?", options:["Social media","Cinema","Billboard","Print newspaper"], answer:0},
+      {type:"mcq", q:"Which factor affects distribution choice?", options:["Target audience","Compression","Bit depth","Resolution only"], answer:0},
+
+      {
+        type:"written",
+        command:"Explain",
+        marks:4,
+        q:"Explain why distribution platform must be considered during planning.",
+        markScheme:[
+          "1 mark – identifies platform",
+          "1 mark – links to audience",
+          "1–2 marks – developed explanation"
+        ],
+        modelAnswer:"The distribution platform affects format, resolution and file size. A product designed for mobile devices must be optimised differently than one for cinema."
+      },
+
+      {
+        type:"extended",
+        command:"Evaluate",
+        marks:9,
+        q:"Evaluate how choosing the wrong distribution platform could impact product success.",
+        markScheme:[
+          "Level 1 – basic statements",
+          "Level 2 – clear explanation",
+          "Level 3 – developed evaluation with judgement"
+        ],
+        modelAnswer:"If a product is distributed on a platform unsuitable for its target audience, engagement will be low. Technical requirements may also not match. Choosing the correct platform maximises reach and accessibility."
+      }
+
+    ],
+
+    flashcards:[
+      {front:"Distribution", back:"How a media product reaches its audience."},
+      {front:"Streaming Platform", back:"Online service delivering digital media content."},
+      {front:"Optimisation", back:"Adjusting a product for platform requirements."}
+    ]
+  },
+
+  /* ================= FILE FORMATS ================= */
+
+  "File Formats": {
+
+    quiz:[
+
+      {type:"mcq", q:"Which image format uses lossy compression?", options:["JPEG","PNG","PSD","TIFF"], answer:0},
+      {type:"mcq", q:"Which image format supports transparency?", options:["PNG","JPEG","MP3","WAV"], answer:0},
+      {type:"mcq", q:"Which audio format is uncompressed?", options:["WAV","MP3","AAC","JPEG"], answer:0},
+      {type:"mcq", q:"Which video format is widely used online?", options:["MP4","PSD","TIFF","PNG"], answer:0},
+
+      {
+        type:"written",
+        command:"Explain",
+        marks:4,
+        q:"Explain the difference between lossy and lossless compression.",
+        markScheme:[
+          "1 mark – defines lossy",
+          "1 mark – defines lossless",
+          "1–2 marks – explains quality difference"
+        ],
+        modelAnswer:"Lossy compression removes some data to reduce file size, lowering quality. Lossless compression reduces size without losing data."
+      },
+
+      {
+        type:"extended",
+        command:"Discuss",
+        marks:6,
+        q:"Discuss how file format choice affects product quality and file size.",
+        markScheme:[
+          "1–2 marks – identifies formats",
+          "1–2 marks – explains size impact",
+          "1–2 marks – developed discussion"
+        ],
+        modelAnswer:"JPEG reduces file size but lowers quality. PNG maintains quality but produces larger files. Choosing format depends on platform and purpose."
+      }
+
+    ],
+
+    flashcards:[
+      {front:"JPEG", back:"Image format using lossy compression."},
+      {front:"PNG", back:"Image format supporting transparency."},
+      {front:"WAV", back:"Uncompressed audio format."},
+      {front:"MP4", back:"Common compressed video format."}
+    ]
+  },
+
+  /* ================= FILE PROPERTIES ================= */
+
+  "Resolution, Bitrate & Quality": {
+
+    quiz:[
+
+      {type:"mcq", q:"What does resolution measure?", options:["Number of pixels","File name","Budget","Compression method"], answer:0},
+      {type:"mcq", q:"What does bitrate affect?", options:["Audio/video quality","Font choice","Layout","Deadline"], answer:0},
+      {type:"mcq", q:"Higher resolution results in:", options:["Better image quality","Smaller file size","Less storage","Faster loading only"], answer:0},
+
+      {
+        type:"written",
+        command:"Explain",
+        marks:4,
+        q:"Explain how resolution affects file size.",
+        markScheme:[
+          "1 mark – identifies resolution",
+          "1 mark – links to pixels",
+          "1–2 marks – explains file size impact"
+        ],
+        modelAnswer:"Higher resolution means more pixels, increasing detail but also increasing file size."
+      },
+
+      {
+        type:"extended",
+        command:"Evaluate",
+        marks:9,
+        q:"Evaluate how balancing file size and quality is important in digital media production.",
+        markScheme:[
+          "Level 1 – basic understanding",
+          "Level 2 – clear explanation",
+          "Level 3 – developed evaluation with judgement"
+        ],
+        modelAnswer:"Large file sizes provide higher quality but may reduce loading speed. Smaller files load quickly but may lose quality. Balancing both ensures accessibility and professional standards."
+      }
+
+    ],
+
+    flashcards:[
+      {front:"Resolution", back:"Number of pixels in an image."},
+      {front:"Bitrate", back:"Amount of data processed per second."},
+      {front:"Frame Rate", back:"Number of frames displayed per second in video."},
+      {front:"Compression", back:"Reducing file size by removing data."}
     ]
   }
 
