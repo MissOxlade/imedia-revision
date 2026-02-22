@@ -825,5 +825,123 @@ R094: {
 
   }
 
-}
+},
+
+/* =========================
+   R097 – Interactive Digital Media  
+   ========================= */
+   
+R097: {
+
+  "TA1 Interactive Digital Media": {
+
+    /* ================= PLANNING INTERACTIVE PRODUCTS ================= */
+
+    "Planning & Design": {
+      quiz:[
+        {type:"mcq", q:"What is the purpose of a wireframe?", options:["Final design","Navigation planning","Compression","Branding only"], answer:1},
+        {type:"mcq", q:"Which document shows how pages link together?", options:["Navigation map","Mood board","Asset log","Risk assessment"], answer:0},
+
+        {
+          type:"written",
+          command:"Explain",
+          marks:4,
+          q:"Explain why planning documents are important when creating an interactive product.",
+          markScheme:[
+            "1 mark – identifies planning",
+            "1 mark – links to structure",
+            "1–2 marks – developed explanation"
+          ],
+          modelAnswer:"Planning documents ensure navigation works logically and content is organised. This reduces errors during development."
+        },
+
+        {
+          type:"extended",
+          command:"Discuss",
+          marks:6,
+          q:"Discuss how effective planning improves user experience.",
+          markScheme:[
+            "1–2 marks – identifies planning",
+            "1–2 marks – explains UX impact",
+            "1–2 marks – developed discussion"
+          ],
+          modelAnswer:"Effective planning ensures logical navigation and clear layout. This improves usability and prevents user confusion."
+        }
+      ],
+      flashcards:[
+        {front:"Wireframe", back:"Basic layout plan of a digital page."},
+        {front:"Navigation Map", back:"Shows how pages link together."},
+        {front:"User Experience (UX)", back:"How easy and enjoyable a product is to use."}
+      ]
+    },
+
+    /* ================= INTERACTIVE FEATURES ================= */
+
+    "Interactive Features": {
+      quiz:[
+        {type:"mcq", q:"Which is an interactive feature?", options:["Hyperlink","Static image","Printed poster","Billboard"], answer:0},
+        {type:"mcq", q:"What does a button allow users to do?", options:["Navigate","Compress","Increase resolution","Export file"], answer:0},
+
+        {
+          type:"written",
+          command:"Explain",
+          marks:4,
+          q:"Explain how interactive features increase engagement.",
+          markScheme:[
+            "1 mark – identifies feature",
+            "1 mark – links to engagement",
+            "1–2 marks – developed explanation"
+          ],
+          modelAnswer:"Interactive features such as buttons and hyperlinks allow users to control navigation, increasing engagement and usability."
+        },
+
+        {
+          type:"extended",
+          command:"Evaluate",
+          marks:9,
+          q:"Evaluate the importance of user-friendly navigation in an interactive product.",
+          markScheme:[
+            "Level 1 – basic statements",
+            "Level 2 – clear explanation",
+            "Level 3 – developed judgement"
+          ],
+          modelAnswer:"User-friendly navigation ensures users can access information easily. Poor navigation frustrates users and reduces effectiveness."
+        }
+      ],
+      flashcards:[
+        {front:"Hyperlink", back:"Clickable element linking to another page."},
+        {front:"Button", back:"Interactive element triggering an action."},
+        {front:"Navigation Bar", back:"Menu allowing movement through pages."}
+      ]
+    },
+
+    /* ================= TESTING & REVIEW ================= */
+
+    "Testing & Improvements": {
+      quiz:[
+        {type:"mcq", q:"Why is user testing important?", options:["Improves usability","Reduces file size","Changes colour","Adds compression"], answer:0},
+        {type:"mcq", q:"Which testing method involves real users?", options:["User testing","Compression test","Export test","Resolution test"], answer:0},
+
+        {
+          type:"written",
+          command:"Explain",
+          marks:6,
+          q:"Explain how feedback from testing can improve an interactive product.",
+          markScheme:[
+            "1–2 marks – identifies feedback",
+            "1–2 marks – explains improvements",
+            "1–2 marks – developed reasoning"
+          ],
+          modelAnswer:"Feedback identifies usability issues and navigation problems. Developers can refine layout and features to improve overall experience."
+        }
+      ],
+      flashcards:[
+        {front:"User Testing", back:"Testing product with real users."},
+        {front:"Feedback", back:"Information used to improve a product."},
+        {front:"Iteration", back:"Making repeated improvements."}
+      ]
+    }
+
+  }
+
 };
