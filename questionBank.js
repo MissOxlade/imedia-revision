@@ -693,33 +693,147 @@ R093: {
 },
 
 /* =========================
-   R097 – Interactive Digital Media
+   R094 – Visual Identity 
    ========================= */
 
-R097: {
+R094: {
 
-  "Interactive Features & Testing": {
+  /* ================= VISUAL IDENTITY ================= */
+
+  "Visual Identity & Branding": {
+
     quiz:[
-      {type:"mcq", q:"Which is a feature of interactive media?", options:["Static image","User input","Print only","Broadcast only"], answer:1},
+
+      {type:"mcq", q:"What is the purpose of a logo?", options:["Decoration","Brand recognition","Compression","Navigation"], answer:1},
+      {type:"mcq", q:"Which element helps maintain consistent branding?", options:["House style","Resolution","Bitrate","File size"], answer:0},
+      {type:"mcq", q:"Which colour scheme suggests energy and excitement?", options:["Warm colours","Monochrome","Pastel only","Black and white"], answer:0},
+
       {
         type:"written",
         command:"Explain",
-        marks:6,
-        q:"Explain why user testing improves interactive products.",
+        marks:4,
+        q:"Explain why consistency is important in visual identity.",
         markScheme:[
-          "1–2 marks – identifies testing",
-          "1–2 marks – explains improvements",
+          "1 mark – identifies consistency",
+          "1 mark – links to brand recognition",
+          "1–2 marks – developed explanation"
+        ],
+        modelAnswer:"Consistency ensures audiences recognise the brand easily. Using consistent colours, fonts and layouts strengthens brand identity."
+      },
+
+      {
+        type:"extended",
+        command:"Evaluate",
+        marks:9,
+        q:"Evaluate how effective visual identity can influence audience perception.",
+        markScheme:[
+          "Level 1 – basic understanding",
+          "Level 2 – clear explanation",
+          "Level 3 – developed evaluation with judgement"
+        ],
+        modelAnswer:"Effective visual identity creates professionalism and trust. Colour, typography and layout influence how audiences perceive quality and reliability."
+      }
+
+    ],
+
+    flashcards:[
+      {front:"Visual Identity", back:"Visual representation of a brand."},
+      {front:"Logo", back:"Symbol representing a brand."},
+      {front:"House Style", back:"Consistent visual style across products."},
+      {front:"Brand Recognition", back:"Ability of audience to identify a brand."}
+    ]
+  },
+
+  /* ================= DESIGN PRINCIPLES ================= */
+
+  "Design Principles & Typography": {
+
+    quiz:[
+
+      {type:"mcq", q:"Which is a design principle?", options:["Contrast","Compression","Bitrate","Resolution"], answer:0},
+      {type:"mcq", q:"What does typography refer to?", options:["Font style and arrangement","Colour scheme","Layout grid","File size"], answer:0},
+      {type:"mcq", q:"Which font type is generally more formal?", options:["Serif","Comic Sans","Handwritten","Graffiti"], answer:0},
+
+      {
+        type:"written",
+        command:"Describe",
+        marks:4,
+        q:"Describe two design principles used in graphic design.",
+        markScheme:[
+          "1 mark – identifies principle 1",
+          "1 mark – explains principle 1",
+          "1 mark – identifies principle 2",
+          "1 mark – explains principle 2"
+        ],
+        modelAnswer:"Contrast creates visual interest by using differences in colour or size. Alignment ensures elements are arranged neatly and logically."
+      },
+
+      {
+        type:"extended",
+        command:"Explain",
+        marks:6,
+        q:"Explain how typography can influence audience perception.",
+        markScheme:[
+          "1–2 marks – identifies typography",
+          "1–2 marks – explains perception",
           "1–2 marks – developed reasoning"
         ],
-        modelAnswer:"User testing identifies usability problems and allows improvements before final release."
+        modelAnswer:"Typography affects readability and tone. Serif fonts may appear traditional and formal, while sans-serif fonts appear modern."
       }
+
     ],
+
     flashcards:[
-      {front:"User Interface", back:"Visual layout users interact with."},
-      {front:"Navigation Structure", back:"System allowing movement through content."}
+      {front:"Contrast", back:"Difference between elements to create focus."},
+      {front:"Alignment", back:"Arrangement of elements in a structured way."},
+      {front:"Typography", back:"Style and arrangement of text."},
+      {front:"Serif Font", back:"Font with decorative strokes at ends of letters."}
+    ]
+  },
+
+  /* ================= FILE PROPERTIES & EXPORT ================= */
+
+  "Technical Properties & Export": {
+
+    quiz:[
+
+      {type:"mcq", q:"Which file format preserves editing layers?", options:["PSD","JPEG","PNG","GIF"], answer:0},
+      {type:"mcq", q:"Which format is best for web images?", options:["JPEG","PSD","RAW","TIFF"], answer:0},
+      {type:"mcq", q:"Higher DPI results in:", options:["Better print quality","Smaller file","Lower quality","No change"], answer:0},
+
+      {
+        type:"written",
+        command:"Explain",
+        marks:4,
+        q:"Explain why export format must match distribution platform.",
+        markScheme:[
+          "1 mark – identifies export",
+          "1 mark – links to platform",
+          "1–2 marks – developed explanation"
+        ],
+        modelAnswer:"Different platforms require specific formats and resolutions. Incorrect export may reduce quality or prevent upload."
+      },
+
+      {
+        type:"extended",
+        command:"Discuss",
+        marks:6,
+        q:"Discuss the importance of reviewing and refining a digital graphic.",
+        markScheme:[
+          "1–2 marks – identifies review",
+          "1–2 marks – explains improvement",
+          "1–2 marks – developed discussion"
+        ],
+        modelAnswer:"Reviewing identifies errors and areas for improvement. Refinement improves quality and ensures client requirements are met."
+      }
+
+    ],
+
+    flashcards:[
+      {front:"DPI", back:"Dots per inch – measure of print resolution."},
+      {front:"PSD", back:"Editable Photoshop file format."},
+      {front:"Export", back:"Saving a file in a specific format for distribution."}
     ]
   }
-
-}
 
 };
