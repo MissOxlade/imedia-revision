@@ -124,61 +124,212 @@ R093: {
   }
 
 },
+ "TA2 Factors Influencing Product Design": {
 
-// ==============================
-// R094 – Visual Identity & Digital Graphics
-// ==============================
+    "Purpose, Style, Content & Layout": {
+      quiz: [
+        {type:"mcq", q:"What does layout refer to?", options:["Colour choice","Positioning of elements","File size","Budget"], answer:1},
+        {type:"mcq", q:"Which is part of style?", options:["Tone and visual appearance","Compression rate","Bit depth","Resolution"], answer:0},
+        {
+          type:"written",
+          command:"Explain",
+          marks:4,
+          q:"Explain how layout affects audience engagement.",
+          markScheme:[
+            "1 mark – identifies layout feature",
+            "1 mark – explains impact",
+            "1–2 marks – developed link to engagement"
+          ],
+          modelAnswer:"Layout affects how easily an audience can navigate and understand content. Clear hierarchy and spacing improve readability and user experience. Poor layout can confuse audiences and reduce engagement."
+        },
+        {
+          type:"extended",
+          command:"Evaluate",
+          marks:9,
+          q:"Evaluate how style and content must be adapted for different target audiences.",
+          markScheme:[
+            "Level 1 – basic understanding",
+            "Level 2 – clear explanation with examples",
+            "Level 3 – developed evaluation with judgement"
+          ],
+          modelAnswer:"Different audiences respond to different visual styles and tones. A younger audience may prefer bold colours and informal language, while professionals may expect minimal design and formal tone. Adapting style ensures relevance and improves engagement. Failure to adapt may reduce impact."
+        }
+      ],
+      flashcards:[
+        {front:"Layout", back:"Arrangement and positioning of elements."},
+        {front:"House Style", back:"Consistent design style across products."}
+      ]
+    },
 
-"R094 – Visual Identity Purpose & Design": {
-  quiz:[
-    {type:"mcq", q:"What is the purpose of a logo?", options:["Decoration","Brand recognition","Compression","Editing"], answer:1},
-    {type:"written", command:"Explain", marks:4, q:"Explain how colour theory supports branding."},
-    {type:"extended", command:"Evaluate", marks:9, q:"Evaluate how effectively a visual identity meets client requirements and target audience needs."}
-  ],
-  flashcards:[
-    {front:"Visual Identity", back:"Visual elements representing a brand."},
-    {front:"Colour Theory", back:"Guidelines for combining colours effectively."}
-  ]
+    "Client Requirements": {
+      quiz:[
+        {type:"mcq", q:"What is a client brief?", options:["Budget plan","Document outlining requirements","Storyboard","Logo"], answer:1},
+        {
+          type:"written",
+          command:"Describe",
+          marks:3,
+          q:"Describe two elements included in a client brief.",
+          markScheme:[
+            "1 mark – identifies element",
+            "1 mark – second element",
+            "1 mark – description"
+          ],
+          modelAnswer:"A client brief includes the target audience and purpose of the product. It may also include budget, deadline and required content."
+        },
+        {
+          type:"extended",
+          command:"Explain",
+          marks:6,
+          q:"Explain why meeting client requirements is essential.",
+          markScheme:[
+            "1–2 marks – identifies requirements",
+            "1–2 marks – explains importance",
+            "1–2 marks – developed reasoning"
+          ],
+          modelAnswer:"Meeting client requirements ensures the product satisfies expectations and avoids disputes. It keeps production aligned with budget, deadline and purpose."
+        }
+      ],
+      flashcards:[
+        {front:"Client Brief", back:"Document outlining product requirements."}
+      ]
+    }
+
+  },
+
+  "TA3 Pre-Production Planning": {
+
+    "Documentation": {
+      quiz:[
+        {type:"mcq", q:"Which document shows shot order visually?", options:["Script","Storyboard","Flat plan","Asset log"], answer:1},
+        {type:"mcq", q:"What does an asset log record?", options:["Budget","Locations","Media sources","Audience"], answer:2},
+        {
+          type:"written",
+          command:"Explain",
+          marks:4,
+          q:"Explain why pre-production documents are important.",
+          markScheme:[
+            "1 mark – planning reference",
+            "1 mark – organisation",
+            "1–2 marks – reduces errors"
+          ],
+          modelAnswer:"Pre-production documents help plan the project clearly. They ensure everyone understands their role and reduce mistakes during production."
+        }
+      ],
+      flashcards:[
+        {front:"Storyboard", back:"Visual plan of scenes."},
+        {front:"Asset Log", back:"Tracks media assets and sources."}
+      ]
+    },
+
+    "Legal & Ethical Issues": {
+      quiz:[
+        {type:"mcq", q:"What does copyright protect?", options:["Ideas","Original work","Budget","Audience"], answer:1},
+        {
+          type:"extended",
+          command:"Evaluate",
+          marks:9,
+          q:"Evaluate the consequences of ignoring legal issues in media production.",
+          markScheme:[
+            "Level 1 – basic statements",
+            "Level 2 – clear explanation",
+            "Level 3 – developed evaluation"
+          ],
+          modelAnswer:"Ignoring legal issues can lead to fines, lawsuits and reputational damage. Copyright breaches may result in legal action. Ethical failures may harm audience trust. Overall, legal compliance is essential for professional credibility."
+        }
+      ],
+      flashcards:[
+        {front:"Copyright", back:"Legal protection for original work."},
+        {front:"Libel", back:"Written false statement harming reputation."}
+      ]
+    }
+
+  },
+
+  "TA4 Distribution & File Properties": {
+
+    "File Formats & Compression": {
+      quiz:[
+        {type:"mcq", q:"Which image format uses lossy compression?", options:["PNG","JPEG","GIF","PSD"], answer:1},
+        {type:"mcq", q:"Which audio format is uncompressed?", options:["MP3","WAV","AAC","JPEG"], answer:1},
+        {
+          type:"written",
+          command:"Explain",
+          marks:4,
+          q:"Explain how compression affects file size and quality.",
+          markScheme:[
+            "1 mark – identifies compression",
+            "1 mark – explains size reduction",
+            "1–2 marks – explains quality impact"
+          ],
+          modelAnswer:"Compression reduces file size by removing data. Lossy compression reduces quality but saves space. Lossless keeps quality but results in larger files."
+        }
+      ],
+      flashcards:[
+        {front:"Resolution", back:"Number of pixels in an image."},
+        {front:"Bitrate", back:"Amount of data processed per second."}
+      ]
+    }
+
+  }
+
 },
 
-"R094 – Digital Graphics Creation": {
-  quiz:[
-    {type:"mcq", q:"Which tool removes part of an image?", options:["Crop","Blur","Fill","Export"], answer:0},
-    {type:"written", command:"Describe", marks:3, q:"Describe how layers improve image editing."},
-    {type:"extended", command:"Explain", marks:6, q:"Explain how editing techniques improve the quality of a digital graphic."}
-  ],
-  flashcards:[
-    {front:"Layer", back:"Separate editable level within an image."},
-    {front:"Transparency", back:"The level at which content allows background to show."}
-  ]
+/* =========================
+   R094 – Visual Identity & Digital Graphics
+   ========================= */
+
+R094: {
+
+  "Visual Identity Planning": {
+    quiz:[
+      {type:"mcq", q:"What is the purpose of a logo?", options:["Decoration","Brand recognition","Compression","Navigation"], answer:1},
+      {
+        type:"extended",
+        command:"Evaluate",
+        marks:9,
+        q:"Evaluate how effectively a logo meets client requirements.",
+        markScheme:[
+          "Level 1 – basic understanding",
+          "Level 2 – clear explanation",
+          "Level 3 – developed judgement"
+        ],
+        modelAnswer:"An effective logo meets client requirements through appropriate colour, typography and symbolism. If aligned with target audience expectations, it strengthens brand recognition."
+      }
+    ],
+    flashcards:[
+      {front:"Typography", back:"Style and arrangement of text."},
+      {front:"Colour Theory", back:"Principles of colour combinations."}
+    ]
+  }
+
 },
 
-// ==============================
-// R097 – Interactive Digital Media
-// ==============================
+/* =========================
+   R097 – Interactive Digital Media
+   ========================= */
 
-"R097 – Features & Planning": {
-  quiz:[
-    {type:"mcq", q:"Which is a feature of interactive media?", options:["Static layout","User input","Printed format","No navigation"], answer:1},
-    {type:"written", command:"Explain", marks:4, q:"Explain why navigation structure is important in interactive media."},
-    {type:"extended", command:"Evaluate", marks:9, q:"Evaluate how testing improves an interactive digital media product."}
-  ],
-  flashcards:[
-    {front:"User Interface (UI)", back:"Visual layout users interact with."},
-    {front:"Navigation", back:"System allowing users to move through content."}
-  ]
-},
+R097: {
 
-"R097 – Testing & Improvements": {
-  quiz:[
-    {type:"mcq", q:"Why is user testing important?", options:["To increase file size","To identify issues","To remove branding","To reduce colour"], answer:1},
-    {type:"written", command:"Describe", marks:3, q:"Describe one method of user testing."},
-    {type:"extended", command:"Explain", marks:6, q:"Explain how feedback can be used to improve an interactive product."}
-  ],
-  flashcards:[
-    {front:"User Testing", back:"Process of gathering feedback from users."},
-    {front:"Accessibility", back:"Designing products usable by all users including those with disabilities."}
-  ]
+  "Features & Testing": {
+    quiz:[
+      {type:"mcq", q:"Which is a feature of interactive media?", options:["Static layout","User input","Printed format","Broadcast only"], answer:1},
+      {
+        type:"written",
+        command:"Explain",
+        marks:6,
+        q:"Explain why user testing improves interactive products.",
+        markScheme:[
+          "1–2 marks – identifies testing",
+          "1–2 marks – explains usability",
+          "1–2 marks – developed explanation"
+        ],
+        modelAnswer:"User testing identifies navigation problems and usability issues. Feedback allows improvements before final release."
+      }
+    ],
+    flashcards:[
+      {front:"User Interface", back:"Visual layout users interact with."},
+      {front:"Navigation Structure", back:"System allowing movement through content."}
+    ]
+  }
+
 }
-
-};
