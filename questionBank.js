@@ -230,31 +230,178 @@ R093: {
    
   /* ================= TA2 ================= */
 
-  "TA2 Factors Influencing Product Design": {
+ "TA2 Factors Influencing Product Design": {
 
-    "Audience & Demographics": {
-      quiz:[
-        {type:"mcq", q:"Which is a demographic category?", options:["Age","Layout","Resolution","Font"], answer:0},
-        {type:"mcq", q:"What does psychographics refer to?", options:["Income","Lifestyle","File size","Bit depth"], answer:1}
-      ],
-      flashcards:[
-        {front:"Demographics", back:"Statistical data such as age, gender and income."},
-        {front:"Psychographics", back:"Audience interests and lifestyles."}
-      ]
-    },
+  /* ================= PURPOSE ================= */
 
-    "Research Methods": {
-      quiz:[
-        {type:"mcq", q:"Which is primary research?", options:["Online article","Questionnaire","Magazine review","Blog post"], answer:1},
-        {type:"mcq", q:"Which is secondary research?", options:["Survey","Interview","Government report","Focus group"], answer:2}
-      ],
-      flashcards:[
-        {front:"Primary Research", back:"Research collected directly."},
-        {front:"Secondary Research", back:"Research collected from existing sources."}
-      ]
-    }
+  "Purpose of Media Products": {
+    quiz: [
 
+      {type:"mcq", q:"Which is a possible purpose of a media product?", options:["Entertain","Compress files","Increase resolution","Export format"], answer:0},
+      {type:"mcq", q:"Which purpose is most common for advertising?", options:["Educate","Inform","Promote","Archive"], answer:2},
+      {type:"mcq", q:"Which product is most likely created to inform?", options:["News article","Video game","Film trailer","Logo"], answer:0},
+
+      {
+        type:"written",
+        command:"Explain",
+        marks:4,
+        q:"Explain why identifying purpose is important before production begins.",
+        markScheme:[
+          "1 mark – identifies purpose",
+          "1 mark – links to planning",
+          "1–2 marks – developed explanation"
+        ],
+        modelAnswer:"Identifying purpose ensures the product meets its intended aim, such as entertaining or informing. It guides decisions about content, style and layout."
+      },
+
+      {
+        type:"extended",
+        command:"Evaluate",
+        marks:9,
+        q:"Evaluate how failing to clearly identify purpose could impact the success of a media product.",
+        markScheme:[
+          "Level 1 – basic statements",
+          "Level 2 – clear explanation of impact",
+          "Level 3 – developed evaluation with justified judgement"
+        ],
+        modelAnswer:"If purpose is unclear, the product may not meet audience expectations. Content may be inconsistent and ineffective. Overall, clearly defining purpose is essential for success."
+      }
+
+    ],
+    flashcards:[
+      {front:"Purpose", back:"The reason a media product is created."},
+      {front:"Entertain", back:"To amuse or engage an audience."},
+      {front:"Inform", back:"To provide information to an audience."},
+      {front:"Promote", back:"To advertise or market a product or service."}
+    ]
   },
+
+  /* ================= AUDIENCE ================= */
+
+  "Audience & Demographics": {
+    quiz:[
+
+      {type:"mcq", q:"Which is a demographic factor?", options:["Age","Layout","Resolution","Font"], answer:0},
+      {type:"mcq", q:"Which is psychographic data?", options:["Income","Lifestyle","Gender","Age"], answer:1},
+      {type:"mcq", q:"Which age group is most likely targeted for children's TV?", options:["3–12","18–35","50+","25–45"], answer:0},
+
+      {
+        type:"written",
+        command:"Describe",
+        marks:4,
+        q:"Describe two demographic characteristics used to define a target audience.",
+        markScheme:[
+          "1 mark – identifies characteristic 1",
+          "1 mark – explains characteristic 1",
+          "1 mark – identifies characteristic 2",
+          "1 mark – explains characteristic 2"
+        ],
+        modelAnswer:"Age defines what content is suitable. Income affects affordability of products. Gender and location can also influence design decisions."
+      },
+
+      {
+        type:"extended",
+        command:"Explain",
+        marks:6,
+        q:"Explain why understanding audience is essential when designing a media product.",
+        markScheme:[
+          "1–2 marks – identifies audience factors",
+          "1–2 marks – explains design decisions",
+          "1–2 marks – developed reasoning"
+        ],
+        modelAnswer:"Understanding audience ensures content, language and visuals match expectations. For example, bright colours may appeal to children while minimal design suits professionals."
+      }
+
+    ],
+    flashcards:[
+      {front:"Demographics", back:"Statistical data such as age, gender and income."},
+      {front:"Psychographics", back:"Audience interests and lifestyle choices."},
+      {front:"Target Audience", back:"Specific group a product is designed for."}
+    ]
+  },
+
+  /* ================= CLIENT REQUIREMENTS ================= */
+
+  "Client Requirements & Constraints": {
+    quiz:[
+
+      {type:"mcq", q:"What is included in a client brief?", options:["Deadline","File compression","Resolution","Bitrate"], answer:0},
+      {type:"mcq", q:"Which is a constraint?", options:["Budget","Colour scheme","Font size","Logo style"], answer:0},
+
+      {
+        type:"written",
+        command:"Explain",
+        marks:4,
+        q:"Explain how budget constraints can affect product design.",
+        markScheme:[
+          "1 mark – identifies budget",
+          "1 mark – explains limitation",
+          "1–2 marks – developed impact"
+        ],
+        modelAnswer:"Limited budget may restrict equipment quality, staff hiring and production time, reducing overall quality."
+      },
+
+      {
+        type:"extended",
+        command:"Discuss",
+        marks:6,
+        q:"Discuss how client requirements influence production decisions.",
+        markScheme:[
+          "1–2 marks – identifies requirements",
+          "1–2 marks – explains influence",
+          "1–2 marks – developed discussion"
+        ],
+        modelAnswer:"Client requirements determine target audience, purpose and deadlines. Production decisions such as layout, content and distribution must align with these requirements."
+      }
+
+    ],
+    flashcards:[
+      {front:"Client Brief", back:"Document outlining requirements."},
+      {front:"Constraint", back:"A limitation such as time or budget."}
+    ]
+  },
+
+  /* ================= RESEARCH ================= */
+
+  "Research Methods": {
+    quiz:[
+
+      {type:"mcq", q:"Which is primary research?", options:["Questionnaire","Magazine article","Blog post","Report"], answer:0},
+      {type:"mcq", q:"Which is secondary research?", options:["Interview","Survey","Government report","Focus group"], answer:2},
+
+      {
+        type:"written",
+        command:"Explain",
+        marks:4,
+        q:"Explain one advantage of primary research.",
+        markScheme:[
+          "1 mark – identifies advantage",
+          "1–3 marks – developed explanation"
+        ],
+        modelAnswer:"Primary research provides first-hand data specific to the target audience, increasing accuracy."
+      },
+
+      {
+        type:"extended",
+        command:"Evaluate",
+        marks:9,
+        q:"Evaluate the strengths and weaknesses of primary and secondary research.",
+        markScheme:[
+          "Level 1 – basic statements",
+          "Level 2 – clear explanation",
+          "Level 3 – developed comparison with judgement"
+        ],
+        modelAnswer:"Primary research is specific and relevant but time-consuming. Secondary research is quick and cost-effective but may not be fully reliable. A combination is often most effective."
+      }
+
+    ],
+    flashcards:[
+      {front:"Primary Research", back:"Data collected directly from source."},
+      {front:"Secondary Research", back:"Data gathered from existing sources."}
+    ]
+  }
+
+},
 
   /* ================= TA3 ================= */
 
